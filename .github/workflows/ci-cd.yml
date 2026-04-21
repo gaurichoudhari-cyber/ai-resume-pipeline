@@ -18,10 +18,10 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install --include=dev
 
       - name: Run Tests
-        run: npm test
+        run: npx jest --ci --runInBand
 
-      - name: Run ESLint (Code Quality)
+      - name: Run ESLint 
         run: npx eslint .
