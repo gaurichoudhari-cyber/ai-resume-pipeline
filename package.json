@@ -1,0 +1,19 @@
+{
+  "name": "ai-resume-pipeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "test": "jest"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "eslint": "^10.2.1",
+    "express": "^5.2.1",
+    "jest": "^30.3.0",
+    "supertest": "^7.2.2"
+  }
+}
