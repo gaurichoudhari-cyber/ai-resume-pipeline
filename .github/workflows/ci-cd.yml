@@ -18,10 +18,14 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run: npm install --include=dev
+        run: npm install
+
+      - name: Install Jest Globally (fix CI issue)
+        run: npm install -g jest
 
       - name: Run Tests
-        run: npx jest --ci --runInBand
+        run: jest --ci --runInBand
 
-      - name: Run ESLint 
+      - name: Run ESLint
         run: npx eslint .
+        
